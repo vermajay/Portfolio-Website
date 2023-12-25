@@ -30,7 +30,6 @@ const Projects = () => {
         {projects.map((project, index)=>(
           <ProjectCard
             key={index}
-            index={index}
             {...project}
           />
         ))}
@@ -51,9 +50,9 @@ const Projects = () => {
 
 export default SectionWrapper(Projects)
 
-const ProjectCard = ({index, name, description, tags, image, source_code_link}) => {
+const ProjectCard = ({name, description, tags, image, source_code_link}) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <div>
       <Tilt
         className='bg-tertiary p-5 rounded-2xl w-full sm:w-[360px]'
         tiltMaxAngleX={20} tiltMaxAngleY={20} perspective={1000} scale={1}
@@ -92,6 +91,6 @@ const ProjectCard = ({index, name, description, tags, image, source_code_link}) 
         </div>
 
       </Tilt>
-    </motion.div>
+    </div>
   )
 }

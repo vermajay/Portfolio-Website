@@ -50,7 +50,7 @@ const Contact = () => {
               name='email'
               value={form.email}
               onChange={handleChange}
-              placeholder="Your Email"
+              placeholder="Your Email Address"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary 
               text-white rounded-lg outline-none border-none font-medium'
             />
@@ -71,7 +71,7 @@ const Contact = () => {
 
           <button className='bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md
           hover:shadow-primary rounded-xl transition-all duration-200'>
-            {loading ? 'Sending...' : 'Send'}
+            {loading ? 'Shooting...' : 'Shoot'}
           </button>
         </form>
       </motion.div>
