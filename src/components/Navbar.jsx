@@ -34,8 +34,8 @@ const Navbar = () => {
   document.addEventListener('mousedown',closeOpenMenus)
 
   return (
-    <nav className={`${styles.paddingX} w-full flex items-center fixed py-4 top-0 z-20 opacity-100 transition-all duration-100
-    ${scrolled ? "bg-primary bg-opacity-90 backdrop-blur-sm" : ""}`}>
+    <nav className={`${styles.paddingX} w-full flex items-center fixed py-3 top-0 z-20 opacity-100 transition-all duration-100
+    ${scrolled ? "bg-[#c2c8d1] bg-opacity-90 backdrop-blur-sm" : ""}`}>
 
       <div className='w-full flex justify-between items-center max-w-[1400px] mx-auto'>
         {/* LOGO AND NAME */}
@@ -47,7 +47,7 @@ const Navbar = () => {
           }}
         >
           <img src={logo} alt='logo' className='w-9 h-9 object-contain'/>
-          <p className='text-white text-[18px] font-bold cursor-pointer'>Jay Verma</p>
+          <p className='text-black text-[18px] font-bold cursor-pointer'>Jay Verma</p>
         </Link>
 
         {/* NAVBAR */}
@@ -66,8 +66,7 @@ const Navbar = () => {
           }
         </ul>
 
-
-          {/* MOBILE NAVBAR */}
+        {/* MOBILE NAVBAR */}
         <div ref={navMenu} className='sm:hidden flex flex-1 justify-end items-center relative'>
 
           {/*Hamburger icon*/}
@@ -78,8 +77,7 @@ const Navbar = () => {
             <div className="bar"></div>
           </a>
 
-          <div className={`${!toggle ? 'opacity-0' : 'opacity-100'} p-6 absolute -top-9 -right-4 mx-4 my-3 bg-zinc-950
-          min-w-[140px] z-10 rounded-md transition-all duration-200`}>
+          <div className={`${!toggle ? 'opacity-0' : 'opacity-100'} p-6 absolute -top-9 -right-4 mx-4 my-3 bg-[#c2c8d1] bg-opacity-[0.98] backdrop-blur-md min-w-[140px] z-10 rounded-md transition-all duration-200`}>
 
             <ul className='flex flex-col gap-4 pt-6 pr-8 items-start justify-end'>
               {

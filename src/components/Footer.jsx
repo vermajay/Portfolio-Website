@@ -2,7 +2,7 @@ import { emoji1, github, linkedin, leetcode } from "../assets/footer"
 
 const Footer = () => {
   return (
-    <div className="sm:px-36 px-6 -mt-20 pt-28 pb-10 flex flex-col gap-5 justify-between md:flex-row text-[#dde0e1]">
+    <div className="sm:px-36 px-6 -mt-20 pt-28 pb-10 flex flex-col gap-5 justify-between md:flex-row text-secondary">
 
       <div className="flex flex-col items-center font-semibold text-[17px]">
         <p>Designed & Developed by</p>
@@ -15,7 +15,7 @@ const Footer = () => {
 
         <div className="group flex flex-col justify-center cursor-pointer">
           <a href="https://github.com/vermajay" target="_blank">GITHUB</a>
-          <div className="h-[1.5px] w-auto bg-[#dde0e1] opacity-0 -translate-y-1
+          <div className="h-[1.5px] w-auto bg-secondary opacity-0 -translate-y-1
           transition-all
           duration-300
           group-hover:opacity-100 
@@ -23,7 +23,7 @@ const Footer = () => {
         </div>
         <div className="group flex flex-col justify-center cursor-pointer">
           <a href="https://www.linkedin.com/in/jay-verma-a24275205" target="_blank">LINKEDIN</a>
-          <div className="h-[1.5px] w-auto bg-[#dde0e1] opacity-0 -translate-y-1
+          <div className="h-[1.5px] w-auto bg-secondary opacity-0 -translate-y-1
           transition-all
           duration-300
           group-hover:opacity-100 
@@ -31,7 +31,7 @@ const Footer = () => {
         </div>
         <div className="group flex flex-col justify-center cursor-pointer">
           <a href="https://leetcode.com/verma_jay/" target="_blank">LEETCODE</a>
-          <div className="h-[1.5px] w-auto bg-[#dde0e1] opacity-0 -translate-y-1
+          <div className="h-[1.5px] w-auto bg-secondary opacity-0 -translate-y-1
           transition-all
           duration-300
           group-hover:opacity-100 

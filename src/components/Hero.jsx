@@ -1,33 +1,26 @@
 import {motion} from 'framer-motion'
 import { styles } from "../styles"
-import { ComputersCanvas } from "./canvas"
 
 const Hero = () => {
   return (
     <section className='relative w-full mx-auto h-screen'>
       <div className={`${styles.paddingX} absolute inset-0 top-[90px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
-        <div className='flex flex-col justify-center items-center mt-5'>
-          <div className='w-5 h-5 rounded-full bg-[#915eff]'/>
-          <div className='w-1 sm:h-80 h-40 violet-gradient'/>
-        </div>
         <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#915eff]'>Jay</span>
+          <h1 className={`${styles.heroHeadText} text-black`}>
+            Hello, I'm <span className='blue-gradient_text'>Jay</span>👋
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop 3D visuals, user <br className='sm:block hidden'/> interfaces and web applications
+          <p className={`${styles.heroSubText} mt-6 text-secondary`}>
+            Software engineer based in India, specializing in technical education through hands-on learning and building applocations 
           </p>
         </div>
       </div>
-      {/* 3d computer */}
-      <ComputersCanvas/>  
 
       {/* SCROLL */}
       <div className='absolute xs:bottom-7 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>
-          <div className='w-[35px] h-[64px] rounded-3xl border-[3.5px] border-secondary flex justify-center items-start p-2'>
+          <div className='w-[30x] h-[55px] rounded-3xl border-[3px] border-secondary flex justify-center items-start p-2'>
             <motion.div
-              className='w-[0.6rem] h-[0.8rem] rounded-full bg-rose-500 mb-1'
+              className='w-[0.5rem] h-[0.7rem] rounded-full bg-sky-500 mb-1'
               animate={{
                 y:[0,24,0]
               }}

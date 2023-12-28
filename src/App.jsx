@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { BrowserRouter } from "react-router-dom"
-import {Navbar, Hero, Experience, About, Tech, Projects, Contact, Footer, StarsCanvas} from './components'
+import {Navbar, Hero, Experience, About, Tech, Projects, Contact, Footer} from './components'
 import { emoji2 } from "./assets/footer"
 
 const App = () => {
@@ -24,7 +24,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <div className="relative z-0 bg-primary">
-        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+        <div className=" ">
           <Navbar/>
           <Hero/>
         </div>
@@ -34,7 +34,6 @@ const App = () => {
         <Projects/>
         <div className="relative z-0 -mt-20">
           <Contact/>
-          <StarsCanvas/>
         </div>
         <Footer/> 
         

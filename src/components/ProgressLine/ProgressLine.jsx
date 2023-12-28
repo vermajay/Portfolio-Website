@@ -39,7 +39,7 @@ const ProgressLine = ({
 
   return (
     <div>
-      <div className="-mb-4 font-semibold">{label}</div>
+      <div className="-mb-4 font-semibold text-secondary">{label}</div>
       <div
         className="progressVisualFull"
         // to change the background color dynamically

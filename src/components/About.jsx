@@ -8,13 +8,13 @@ import SectionWrapper from '../hoc'
 
 const About = () => {
   return (
-    <div className='-mt-10 pt-28' id='about'>
+    <div className='-mt-10 pt-20' id='about'>
       <motion.div variants={textVariant()} className=''>
-        <p className={styles.sectionSubText}>Introduction</p>
+        <p className={`${styles.sectionSubText} mb-2`}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
 
-      <motion.p variants={fadeIn("","",0.2,1)} className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'>
+      <motion.p variants={fadeIn("","",0.2,1)} className='mt-7 text-secondary text-[17px] max-w-3xl leading-[30px]'>
         I'm a skilled software developer with experience in TypeScript and
         JavaScript, and expertise in frameworks like React, Node.js, and
         Three.js. I'm a quick learner and collaborate closely with clients to
@@ -37,7 +37,7 @@ const ServiceCard = ({index, title, icon}) => {
   return (
     <Tilt className='w-full xs:w-[250px]' tiltMaxAngleX={20} tiltMaxAngleY={20} perspective={1000} scale={1}>
       <motion.div
-        variants={fadeIn("right", "spring", 0.5*index, 0.75)}
+        variants={fadeIn("right", "spring", 0.3*index, 0.75)}
         className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
       >
         <div 

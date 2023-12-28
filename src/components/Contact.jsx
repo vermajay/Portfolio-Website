@@ -1,9 +1,8 @@
 import {useState} from 'react'
-import {motion} from 'framer-motion'
-import { styles } from '../styles'
-import { EarthCanvas } from './canvas'
 import SectionWrapper from '../hoc'
-import { slideIn } from '../utils/motion'
+import {toast} from 'react-hot-toast'
+
+const CONTACT_US_API_URL = "http://localhost:4000/reach/contact"
 
 const Contact = () => {
   const [form, setForm] = useState({
@@ -13,75 +12,100 @@ const Contact = () => {
   });
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) => {}
+  const handleChange = (e) => {
+    const {name, value} = e.target;
+    setForm({ ...form, [name]: value });
+  }
 
-  const handleSubmit = (e) => {}
+  const handleSubmit = async(e) => {
+    e.preventDefault();
+    try{
+      setLoading(true);
+
+      await fetch(CONTACT_US_API_URL, {
+        method: "POST",
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
+          message: form.message,
+        }),
+        headers: {
+          "Content-type": "application/json; charset=UTF-8"
+        }
+      }).then((response) => response.json())
+      .then((json) => console.log(json));
+
+      setForm({
+        name:'',
+        email:'',
+        message:'',
+      })
+      toast.success("Thank you! I will get back to you soon");
+
+      setLoading(false);
+    }
+    catch(error){
+      console.log("Error in sending message-> ", error.message);
+      toast.error("Oops! Your message went to space")
+      setLoading(false);
+    }
+  }
 
   return (
-    <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden -mt-10 pt-20' id='contact'>
-      <motion.div
-        variants={slideIn("left", "tween", 0.2, 1)}
-        className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
+    <div className='mt-20 p-4 flex flex-col xl:flex-row xl:gap-14 gap-10' id='contact'>
+
+      <p className="text-secondary font-bold md:text-[45px] sm:text-[35px] xs:text-[25px] text-[33px]">
+        Have a project in mind or just want to say hello?
+      </p>
+
+      <form
+        onSubmit={handleSubmit}
+        className='flex flex-col gap-6 w-full'
       >
-        <p className={`${styles.sectionSubText}`}>get in touch</p>
-        <p className={`${styles.sectionHeadText}`}>Contact.</p>
+        {/* name */}
+        <label className='flex flex-col'>
+          <input
+            type='text'
+            name='name'
+            value={form.name}
+            onChange={handleChange}
+            placeholder="Your Name"
+            className='bg-[#cecccc] py-4 px-6 placeholder:text-secondary 
+            text-secondary rounded-lg outline-none border-none font-medium'
+          />
+        </label>
 
-        <form
-          onSubmit={handleSubmit}
-          className='mt-8 flex flex-col gap-8'
-        >
-          {/* name */}
-          <label className='flex flex-col'>
-            <input
-              type='text'
-              name='name'
-              value={form.name}
-              onChange={handleChange}
-              placeholder="Your Name"
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary 
-              text-white rounded-lg outline-none border-none font-medium'
-            />
-          </label>
+        {/* email */}
+        <label className='flex flex-col'>
+          <input
+            type='email'
+            name='email'
+            value={form.email}
+            onChange={handleChange}
+            placeholder="Your Email Address"
+            className='bg-[#cecccc] py-4 px-6 placeholder:text-secondary 
+            text-secondary rounded-lg outline-none border-none font-medium'
+          />
+        </label>
 
-          {/* email */}
-          <label className='flex flex-col'>
-            <input
-              type='email'
-              name='email'
-              value={form.email}
-              onChange={handleChange}
-              placeholder="Your Email Address"
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary 
-              text-white rounded-lg outline-none border-none font-medium'
-            />
-          </label>
+        {/* message */}
+        <label className='flex flex-col'>
+          <textarea
+            rows='4'
+            name='message'
+            value={form.message}
+            onChange={handleChange}
+            placeholder="I am contacting you about . . . "
+            className='bg-[#cecccc] py-4 px-6 placeholder:text-secondary 
+            text-secondary rounded-lg outline-none border-none font-medium'
+          />
+        </label>
 
-          {/* message */}
-          <label className='flex flex-col'>
-            <textarea
-              rows='7'
-              name='message'
-              value={form.message}
-              onChange={handleChange}
-              placeholder="I am contacting you about . . . "
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary 
-              text-white rounded-lg outline-none border-none font-medium'
-            />
-          </label>
-
-          <button className='bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md
-          hover:shadow-primary rounded-xl transition-all duration-200'>
-            {loading ? 'Shooting...' : 'Shoot'}
-          </button>
-        </form>
-      </motion.div>
-
-      <motion.div
-        variants={slideIn("right", "tween", 0.2, 1)}
-        className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
-      >
-        <EarthCanvas/>
-      </motion.div>
+        <button className='bg-gradient-to-r from-[#00c6ff] to-[#0072ff] py-3 px-8 outline-none w-fit text-white font-bold shadow-md
+        hover:shadow-primary rounded-xl transition-all duration-200'>
+          {loading ? 'Shooting...' : 'Shoot'}
+        </button>
+      </form>
     </div>  
   )
 }

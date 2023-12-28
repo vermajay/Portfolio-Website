@@ -29,7 +29,7 @@ const Tech = () => {
     <div className='-mt-10 pt-20' id='tech'>
 
       <motion.div variants={textVariant()} className='mb-16'>
-        <p className={styles.sectionSubText}>what i know best</p>
+        <p className={`${styles.sectionSubText} mb-2`}>what i know best</p>
         <h2 className={styles.sectionHeadText}>My Skills and Technology.</h2>
       </motion.div>
 
@@ -50,7 +50,7 @@ const Tech = () => {
                               visualParts={[
                                 {
                                   percentage: technology.progress.toString().concat("%"),
-                                  color: "#c02150",
+                                  color: "#2b77e7",
                                 },
                               ]}
                             />

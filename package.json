@@ -4,18 +4,21 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --host",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "server": "cd server && npm run dev",
+    "dev": "concurrently -n \"client,server\" -c \"bgBlue,bgYellow\" \"vite --host\" \"npm run server\""
   },
   "dependencies": {
     "@react-three/drei": "^9.92.5",
     "@react-three/fiber": "^8.15.12",
+    "concurrently": "^8.2.2",
     "framer-motion": "^10.16.16",
     "maath": "^0.10.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-hot-toast": "^2.4.1",
     "react-parallax-tilt": "^1.7.179",
     "react-router-dom": "^6.21.1",
     "react-scroll": "^1.9.0",

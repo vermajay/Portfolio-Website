@@ -8,7 +8,6 @@
 
 .progressVisualPart {
     /* Number of the seconds for complete animation */
-    transition: width 3s;
-    box-shadow: 0px 0px 4px #c02150;
+    transition: width 2s;
     border-radius: 4px 0px 0px 4px;
 }
