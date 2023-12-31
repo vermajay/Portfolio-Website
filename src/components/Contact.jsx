@@ -115,5 +115,5 @@ const Contact = () => {
     </div>  
   )
 }
-
-export default SectionWrapper(Contact)
+const ContactPage = SectionWrapper(Contact)
+export default ContactPage

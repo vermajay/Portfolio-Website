@@ -35,7 +35,7 @@ const ProgressLine = ({
         })
       );
     });
-  }, [visualParts]);
+  }, [visualParts, isVisible]);
 
   return (
     <div>

@@ -64,5 +64,5 @@ const Tech = () => {
     </div>
   )
 }
-
-export default SectionWrapper(Tech)
+const TechPage = SectionWrapper(Tech)
+export default TechPage
