@@ -34,8 +34,8 @@ const Navbar = () => {
   document.addEventListener('mousedown',closeOpenMenus)
 
   return (
-    <nav className={`${styles.paddingX} w-full flex items-center fixed py-3 top-0 z-20 opacity-100 transition-all duration-100
-    ${scrolled ? "bg-[#c2c8d1] bg-opacity-90 backdrop-blur-sm" : ""}`}>
+    <nav className={`${styles.paddingX} w-full flex items-center fixed py-2 top-0 z-20 opacity-100 transition-all duration-100
+    ${scrolled ? "bg-[#b1b1b1af] bg-opacity-90 backdrop-blur-sm" : ""}`}>
 
       <div className='w-full flex justify-between items-center max-w-[1400px] mx-auto'>
         {/* LOGO AND NAME */}
@@ -56,9 +56,9 @@ const Navbar = () => {
             navLinks.map((link)=>(
               <li
                 key={link.id}
-                className='hover:text-white text-[18px] font-medium cursor-pointer text-secondary'
+                className={`text-[18px] font-medium cursor-pointer text-secondary ${scrolled ? 'hover:text-white' : 'hover:text-[#b1b1b1]'}`}
               >
-                <SLink activeClass='active' spy to={link.id}>
+                <SLink activeClass='active' spy to={link.id} offset={link.id === 'contact' ? -128 : 0}>
                   {link.title}
                 </SLink>
               </li>
@@ -77,7 +77,7 @@ const Navbar = () => {
             <div className="bar"></div>
           </a>
 
-          <div className={`${!toggle ? 'opacity-0' : 'opacity-100'} p-6 absolute -top-9 -right-4 mx-4 my-3 bg-[#c2c8d1] bg-opacity-[0.98] backdrop-blur-md min-w-[140px] z-10 rounded-md transition-all duration-200`}>
+          <div className={`${!toggle ? 'opacity-0' : 'opacity-100'} p-6 absolute -top-9 -right-4 mx-4 my-3 bg-[#b1b1b1] backdrop-blur-md min-w-[140px] z-10 rounded-md transition-all duration-200`}>
 
             <ul className='flex flex-col gap-4 pt-6 pr-8 items-start justify-end'>
               {

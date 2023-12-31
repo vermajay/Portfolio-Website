@@ -19,6 +19,11 @@ const Contact = () => {
 
   const handleSubmit = async(e) => {
     e.preventDefault();
+    if(loading) return;
+    if(!form.name || !form.email || !form.message){
+      toast.error("Please fill all the fields")
+      return
+    }
     try{
       setLoading(true);
 
@@ -101,8 +106,8 @@ const Contact = () => {
           />
         </label>
 
-        <button className='bg-gradient-to-r from-[#00c6ff] to-[#0072ff] py-3 px-8 outline-none w-fit text-white font-bold shadow-md
-        hover:shadow-primary rounded-xl transition-all duration-200'>
+        <button className={`bg-gradient-to-r from-[#00c6ff] to-[#0072ff] hover:bg-gradient-to-l py-3 px-8 outline-none w-fit text-white font-bold shadow-md
+        hover:shadow-[#b8b8b8] rounded-xl transition-all duration-500 ${loading ? 'cursor-not-allowed' : ''}`}>
           {loading ? 'Shooting...' : 'Shoot'}
         </button>
       </form>
