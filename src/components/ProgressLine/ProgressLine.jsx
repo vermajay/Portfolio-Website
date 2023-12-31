@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import "./ProgressLine.css";
+import propTypes from 'prop-types'
 
 const ProgressLine = ({
-  index,
   isVisible,
   isMobile,
   label,
@@ -77,3 +77,11 @@ const ProgressLine = ({
 };
 
 export default ProgressLine;
+
+ProgressLine.propTypes = {
+  isVisible: propTypes.node,
+  isMobile: propTypes.node,
+  label: propTypes.node,
+  backgroundColor: propTypes.node,
+  visualParts: propTypes.node,
+};

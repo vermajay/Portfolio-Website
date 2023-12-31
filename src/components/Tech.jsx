@@ -35,7 +35,7 @@ const Tech = () => {
 
       <div className={`flex flex-row flex-wrap justify-between ${isMobile ? "gap-3" : "gap-10"}`}>
         {technologies.map((technology, index)=>(
-            <div className="flex gap-2">
+            <div className="flex gap-2" key={index}>
                 <img src={technology.icon} width={isMobile ? 50 : 61} height={isMobile ? 50 : 61}/>
 
                 <VisibilitySensor>

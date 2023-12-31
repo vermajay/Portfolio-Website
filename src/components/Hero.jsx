@@ -7,7 +7,7 @@ const Hero = () => {
       <div className={`${styles.paddingX} absolute inset-0 top-[90px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
         <div>
           <h1 className={`${styles.heroHeadText} text-black`}>
-            Hello, I'm <span className='blue-gradient_text'>Jay</span>👋
+            Hello, I&apos;m <span className='blue-gradient_text'>Jay</span>👋
           </h1>
           <p className={`${styles.heroSubText} mt-6 text-secondary`}>
             Software engineer based in India, specializing in technical education through hands-on learning and building applocations 

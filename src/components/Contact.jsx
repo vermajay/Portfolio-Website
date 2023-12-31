@@ -2,7 +2,8 @@ import {useState} from 'react'
 import SectionWrapper from '../hoc'
 import {toast} from 'react-hot-toast'
 
-const CONTACT_US_API_URL = "http://localhost:4000/reach/contact"
+const BASE_URL = process.env.REACT_APP_BASE_URL
+const CONTACT_US_API_URL = BASE_URL + "/reach/contact"
 
 const Contact = () => {
   const [form, setForm] = useState({

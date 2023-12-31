@@ -14,7 +14,7 @@ const Footer = () => {
       <div className="gap-5 font-semibold tracking-wide hidden md:flex">
 
         <div className="group flex flex-col justify-center cursor-pointer">
-          <a href="https://github.com/vermajay" target="_blank">GITHUB</a>
+          <a href="https://github.com/vermajay" target="_blank" rel="noreferrer">GITHUB</a>
           <div className="h-[1.5px] w-auto bg-secondary opacity-0 -translate-y-1
           transition-all
           duration-300
@@ -22,7 +22,7 @@ const Footer = () => {
           group-hover:translate-y-0"></div>
         </div>
         <div className="group flex flex-col justify-center cursor-pointer">
-          <a href="https://www.linkedin.com/in/jay-verma-a24275205" target="_blank">LINKEDIN</a>
+          <a href="https://www.linkedin.com/in/jay-verma-a24275205" target="_blank" rel="noreferrer">LINKEDIN</a>
           <div className="h-[1.5px] w-auto bg-secondary opacity-0 -translate-y-1
           transition-all
           duration-300
@@ -30,7 +30,7 @@ const Footer = () => {
           group-hover:translate-y-0"></div>
         </div>
         <div className="group flex flex-col justify-center cursor-pointer">
-          <a href="https://leetcode.com/verma_jay/" target="_blank">LEETCODE</a>
+          <a href="https://leetcode.com/verma_jay/" target="_blank" rel="noreferrer">LEETCODE</a>
           <div className="h-[1.5px] w-auto bg-secondary opacity-0 -translate-y-1
           transition-all
           duration-300
@@ -41,13 +41,13 @@ const Footer = () => {
       </div>
       
       <div className="flex gap-10 md:hidden mx-auto">
-        <a href="https://github.com/vermajay" target="_blank">
+        <a href="https://github.com/vermajay" target="_blank" rel="noreferrer">
           <img src={github} height="40px" width="40px"/>
         </a>
-        <a href="https://www.linkedin.com/in/jay-verma-a24275205" target="_blank">
+        <a href="https://www.linkedin.com/in/jay-verma-a24275205" target="_blank" rel="noreferrer">
           <img src={linkedin} height="45px" width="45px"/>
         </a>
-        <a href="https://leetcode.com/verma_jay/" target="_blank">
+        <a href="https://leetcode.com/verma_jay/" target="_blank" rel="noreferrer">
           <img src={leetcode} height="42px" width="42px"/>
         </a>
       </div>

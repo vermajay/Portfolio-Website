@@ -3,6 +3,7 @@ import { styles } from '../styles'
 import {github} from '../assets'
 import SectionWrapper from '../hoc'
 import { projects } from '../constants'
+import propTypes from 'prop-types'
 
 const Projects = () => {
 
@@ -88,3 +89,10 @@ const ProjectCard = ({name, description, tags, image, source_code_link}) => {
     </div>
   )
 }
+ProjectCard.propTypes = {
+  name: propTypes.node,
+  description: propTypes.node,
+  tags: propTypes.node,
+  source_code_link: propTypes.node,
+  image: propTypes.node,
+};

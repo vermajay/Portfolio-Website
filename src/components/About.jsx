@@ -1,10 +1,10 @@
 import Tilt from 'react-parallax-tilt'
 import {motion} from 'framer-motion'
-
 import { styles } from '../styles'
 import { services } from '../constants'
 import {fadeIn, textVariant} from '../utils/motion'
 import SectionWrapper from '../hoc'
+import propTypes from 'prop-types'
 
 const About = () => {
   return (
@@ -15,11 +15,11 @@ const About = () => {
       </motion.div>
 
       <motion.p variants={fadeIn("","",0.2,1)} className='mt-7 text-secondary text-[17px] max-w-3xl leading-[30px]'>
-        I'm a skilled software developer with experience in TypeScript and
+        I&apos;m a skilled software developer with experience in TypeScript and
         JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
+        Three.js. I&apos;m a quick learner and collaborate closely with clients to
         create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        real-world problems. Let&apos;s work together to bring your ideas to life!
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
@@ -50,3 +50,8 @@ const ServiceCard = ({index, title, icon}) => {
     </Tilt>
   )
 }
+ServiceCard.propTypes = {
+  index: propTypes.node,
+  title: propTypes.node,
+  icon: propTypes.node,
+};

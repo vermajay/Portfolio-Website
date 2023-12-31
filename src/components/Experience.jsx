@@ -3,6 +3,7 @@ import 'react-vertical-timeline-component/style.min.css'
 import { styles } from "../styles"
 import { experiences } from "../constants"
 import SectionWrapper from '../hoc'
+import propTypes from 'prop-types'
 
 const Experience = () => {
   return (
@@ -52,10 +53,13 @@ const ExperienceCard = ({experience}) => (
 
       <ul className="list-disc mt-5 ml-5 space-y-2">
         {experience.points.map((point,index)=>(
-          <li>
+          <li key={index}>
             {point}
           </li>
         ))}
       </ul>
     </VerticalTimelineElement>
 )
+ExperienceCard.propTypes = {
+  experience: propTypes.node
+};

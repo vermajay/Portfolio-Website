@@ -3,7 +3,7 @@ const app = express();
 
 const reachRoutes = require("./routes/Reach")
 
-const cors = require("cors");  //so the backend(4000) can entertain the requests made by frontend(5173) on the same local machine
+const cors = require("cors");  //so the backend(4000) can entertain the requests made by frontend(3000) on the same local machine
 
 const dotenv = require("dotenv");
 
@@ -15,12 +15,12 @@ app.use(express.json());
 
 app.use(cors(
     {
-        origin: "http://localhost:5173",
+        origin: "*",
         credentials: true
     }
 ))
 
-app.use("/reach", reachRoutes);
+app.use("/api/v1/reach", reachRoutes);
 
 //default route
 app.get("/", (req,res)=>{
