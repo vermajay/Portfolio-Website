@@ -3,9 +3,11 @@ import { VerticalTimelineElement } from "react-vertical-timeline-component"
 
 const ExperienceCard = ({experience}) => (
     <VerticalTimelineElement
-      contentStyle={{background: '#1d1836', color: '#fff'}}
-      contentArrowStyle={{borderRight: '7px solid #232631'}}
+      contentStyle={{background: '#163756', color: '#fff', border:'0px solid white' ,borderTop: '5px solid #fff'}}
+      contentArrowStyle={{borderRight: '7px solid #163756'}}
       date={experience.date}
+      dateClassName="xl:text-black"
+      lineColor={'#000'}
       iconStyle={{background: experience.iconBg}}
       icon={
         <div className="flex justify-center items-center w-full h-full">
@@ -21,7 +23,7 @@ const ExperienceCard = ({experience}) => (
         <h3 className="text-white text-[24px] font-bold">
           {experience.title}
         </h3>
-        <p className="text-secondary text-[16px] font-semibold" style={{margin:0}}>
+        <p className="text-primary text-[16px] font-semibold" style={{margin:0}}>
           {experience.company_name}
         </p>
       </div>

@@ -58,7 +58,7 @@ const Navbar = () => {
                 key={link.id}
                 className={`text-[18px] font-medium cursor-pointer text-secondary ${scrolled ? 'hover:text-white' : 'hover:text-[#b1b1b1]'}`}
               >
-                <SLink activeClass='active' spy to={link.id} offset={link.id === 'contact' ? -128 : 0}>
+                <SLink activeClass='active' spy to={link.id} offset={link.id === 'contact' ? -144 : 0}>
                   {link.title}
                 </SLink>
               </li>

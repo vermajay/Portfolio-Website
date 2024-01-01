@@ -32,7 +32,7 @@ const App = () => {
         <Experience/>
         <Tech/>
         <Projects/>
-        <div className="relative z-0 -mt-20">
+        <div className="relative z-0 -mt-[4rem]">
           <Contact/>
         </div>
         <Footer/> 
@@ -41,7 +41,7 @@ const App = () => {
         <img 
           src={emoji2} 
           className={`object-contain fixed bottom-[27px] right-[13px] h-7 w-7 cursor-pointer
-          ${scrolled ? "md:block hidden" : "hidden"} hover:-translate-y-2 transition-all duration-150`}
+          ${scrolled ? "" : "hidden"} hover:-translate-y-2 transition-all duration-150`}
           onClick={()=>{window.scrollTo(0, 0)}}
         />
       </div>

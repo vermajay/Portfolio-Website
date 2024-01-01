@@ -4,6 +4,7 @@ import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
+import link from "./link.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -24,14 +25,20 @@ import firebase from "./tech/firebase.svg";
 import expressjs from "./tech/expressjs.svg";
 import mysql from "./tech/mysql.svg";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import coderscave from "./company/coderscave.png";
+import kuk from "./company/kuk.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import instagram from "./instagram.png";
+import studynotion from "./studynotion.png";
+import expensetracker from "./expensetracker.png";
+import githubspy from "./githubspy.png";
+import weather from "./weather.png";
+import tictactoe from "./tictactoe.png";
+import randomgif from "./randomgif.png"
+import passwordgenerator from "./passwordgenerator.png"
+import razorpayclone from "./razorpayclone.png"
+
+import hero from "./hero.jpg"
 
 export {
   logo,
@@ -40,6 +47,7 @@ export {
   mobile,
   web,
   github,
+  link,
   menu,
   close,
   css,
@@ -55,14 +63,19 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
+  coderscave,
+  kuk,
   firebase,
   expressjs,
   mysql,
+  instagram,
+  studynotion,
+  expensetracker,
+  githubspy,
+  weather,
+  tictactoe,
+  randomgif,
+  passwordgenerator,
+  razorpayclone,
+  hero
 };
