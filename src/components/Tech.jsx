@@ -6,6 +6,7 @@ import { styles } from "../styles"
 import {motion} from 'framer-motion'
 import ProgressLine from "./ProgressLine/"
 import VisibilitySensor from "react-visibility-sensor";
+import { download } from "../assets"
 
 const Tech = () => {
 
@@ -59,6 +60,14 @@ const Tech = () => {
                 </VisibilitySensor>
             </div>
         ))}
+      </div>
+
+      <div
+        onClick={()=>window.open("/resume.pdf", "_blank")}
+        className='cursor-pointer h-[70px] sm:w-[400px] flex justify-center items-center rounded-lg mx-auto mt-20 md:mt-28 bg-blue group relative text-base'>
+
+        <div className='text-white-100 text-center font-semibold opacity-100 group-hover:opacity-0 group-hover:translate-y-8 absolute transition-all duration-200 uppercase'>grab a copy of my résumé</div>
+        <img src={download} height={60} width={60} className='opacity-0 -mt-16 group-hover:opacity-100 group-hover:translate-y-8 absolute transition-all duration-200'/>
       </div>
       
     </div>

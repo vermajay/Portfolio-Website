@@ -7,6 +7,7 @@ import github from "./github.png";
 import link from "./link.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import download from "./download.png";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -50,6 +51,7 @@ export {
   link,
   menu,
   close,
+  download,
   css,
   docker,
   figma,
