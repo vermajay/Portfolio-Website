@@ -34,6 +34,7 @@ import studynotion from "./studynotion.png";
 import expensetracker from "./expensetracker.png";
 import githubspy from "./githubspy.png";
 import weather from "./weather.png";
+import snakegame from "./snakegame.png";
 import tictactoe from "./tictactoe.png";
 import randomgif from "./randomgif.png"
 import passwordgenerator from "./passwordgenerator.png"
@@ -75,6 +76,7 @@ export {
   expensetracker,
   githubspy,
   weather,
+  snakegame,
   tictactoe,
   randomgif,
   passwordgenerator,

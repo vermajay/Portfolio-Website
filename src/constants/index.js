@@ -22,6 +22,7 @@ import {
   expensetracker,
   githubspy,
   weather,
+  snakegame,
   tictactoe,
   randomgif,
   passwordgenerator,
@@ -292,6 +293,28 @@ const projects = [
     image: weather,
     source_code_link: "https://github.com/vermajay/Weather-App",
     live_link: "https://jayverma-weather.netlify.app/"
+  },
+  {
+    name: "Snake & Apples",
+    description:
+      "Classic Snake game in pure JavaScript: eat apples, grow longer, avoid collisions. Simple, addictive, and no frameworks used.",
+    tags: [
+      {
+        name: "html",
+        color: "#8089E8", //grey blue
+      },
+      {
+        name: "css",
+        color: "#C280D9", //light purple
+      },
+      {
+        name: "javascript",
+        color: "#67B87B", //grey green
+      },
+    ],
+    image: snakegame,
+    source_code_link: "https://github.com/vermajay/Snake-game",
+    live_link: "https://snakeandapples.netlify.app/"
   },
   {
     name: "Tic-Tac-Toe",
