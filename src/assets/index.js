@@ -25,6 +25,7 @@ import threejs from "./tech/threejs.svg";
 import firebase from "./tech/firebase.svg";
 import expressjs from "./tech/expressjs.svg";
 import mysql from "./tech/mysql.svg";
+import _redux from "./tech/redux.svg";
 
 import coderscave from "./company/coderscave.png";
 import kuk from "./company/kuk.png";
@@ -32,6 +33,7 @@ import kuk from "./company/kuk.png";
 import instagram from "./instagram.png";
 import studynotion from "./studynotion.png";
 import expensetracker from "./expensetracker.png";
+import authblogapp from "./authblogapp.png";
 import githubspy from "./githubspy.png";
 import weather from "./weather.png";
 import snakegame from "./snakegame.png";
@@ -66,6 +68,7 @@ export {
   tailwind,
   typescript,
   threejs,
+  _redux,
   coderscave,
   kuk,
   firebase,
@@ -74,6 +77,7 @@ export {
   instagram,
   studynotion,
   expensetracker,
+  authblogapp,
   githubspy,
   weather,
   snakegame,

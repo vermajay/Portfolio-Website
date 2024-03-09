@@ -16,10 +16,12 @@ import {
   threejs,
   firebase,
   expressjs,
+  _redux,
   mysql,
   instagram,
   studynotion,
   expensetracker,
+  authblogapp,
   githubspy,
   weather,
   snakegame,
@@ -75,22 +77,22 @@ const technologies = [
   {
     name: "HTML 5", 
     icon: html,
-    progress: 90,
+    progress: 95,
   },
   {
     name: "CSS 3",
     icon: css,
-    progress: 80,
+    progress: 90,
   },
   {
     name: "JavaScript",
     icon: javascript,
-    progress: 75,
+    progress: 80,
   },
     {
     name: "Tailwind CSS",
     icon: tailwind,
-    progress: 90,
+    progress: 95,
   },
   {
     name: "React JS",
@@ -110,7 +112,12 @@ const technologies = [
   {
     name: "Express JS", 
     icon: expressjs,
-    progress: 70,
+    progress: 80,
+  },
+  {
+    name: "Redux", 
+    icon: _redux,
+    progress: 80,
   },
   {
     name: "MongoDB",
@@ -130,7 +137,7 @@ const technologies = [
   {
     name: "Git", 
     icon: git,
-    progress: 60,
+    progress: 80,
   },
 ];
 
@@ -243,6 +250,40 @@ const projects = [
     live_link: "https://trackmyexpenses.web.app/"
   },
   {
+    name: "Auth and Autz Blog App",
+    description:
+      "Experience secure signup, login, and password recovery, posts are rendered in MongoDB and are fetched using paginated implementation of the api",
+    tags: [
+      {
+        name: "reactjs",
+        color: "#FF2D00", //red
+      },
+      {
+        name: "framer-motion",
+        color: "#F05F00", //orange
+      },
+      {
+        name: "paginated-api",
+        color: "#5D2168", //dark purple
+      },
+      {
+        name: "nodemailer",
+        color: "#11223C", //gray
+      },
+      {
+        name: "mongodb",
+        color: "#11923C", //dark green
+      },
+      {
+        name: "expressjs",
+        color: "#FF00F0", //pink
+      },
+    ],
+    image: authblogapp,
+    source_code_link: "https://github.com/vermajay/Advisoropedia-Internship-Project",
+    live_link: "https://advisoropedia-jay-project.netlify.app/"
+  },
+  {
     name: "Github Spy",
     description:
       "Input a username, uncover complete GitHub profiles instantly. Explore repositories, contributions, followers, and more in one click—a streamlined way to delve into GitHub users' details.",
@@ -269,6 +310,28 @@ const projects = [
     live_link: "https://githubspy.netlify.app/"
   },
   {
+    name: "Snake & Apples",
+    description:
+      "Classic Snake game in pure JavaScript: eat apples, grow longer, avoid collisions. Simple, addictive, and no frameworks used.",
+    tags: [
+      {
+        name: "html",
+        color: "#8089E8", //grey blue
+      },
+      {
+        name: "css",
+        color: "#C280D9", //light purple
+      },
+      {
+        name: "javascript",
+        color: "#67B87B", //grey green
+      },
+    ],
+    image: snakegame,
+    source_code_link: "https://github.com/vermajay/Snake-game",
+    live_link: "https://snakeandapples.netlify.app/"
+  },
+  {
     name: "Weather App",
     description:
       "Discover my versatile weather app! Detailed updates on temperature, humidity, wind speed, and clouds—be ready for any location, any time.",
@@ -293,28 +356,6 @@ const projects = [
     image: weather,
     source_code_link: "https://github.com/vermajay/Weather-App",
     live_link: "https://jayverma-weather.netlify.app/"
-  },
-  {
-    name: "Snake & Apples",
-    description:
-      "Classic Snake game in pure JavaScript: eat apples, grow longer, avoid collisions. Simple, addictive, and no frameworks used.",
-    tags: [
-      {
-        name: "html",
-        color: "#8089E8", //grey blue
-      },
-      {
-        name: "css",
-        color: "#C280D9", //light purple
-      },
-      {
-        name: "javascript",
-        color: "#67B87B", //grey green
-      },
-    ],
-    image: snakegame,
-    source_code_link: "https://github.com/vermajay/Snake-game",
-    live_link: "https://snakeandapples.netlify.app/"
   },
   {
     name: "Tic-Tac-Toe",

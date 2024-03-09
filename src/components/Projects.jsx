@@ -21,7 +21,7 @@ const Projects = () => {
         and manage projects effectively.
       </p>
 
-      <div className='mt-20 flex justify-between flex-wrap gap-5'>
+      <div className='mt-20 flex justify-start flex-wrap gap-5'>
         {projects.map((project, index)=>(
           <ProjectCard
             key={index}
