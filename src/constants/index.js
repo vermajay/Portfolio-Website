@@ -252,7 +252,7 @@ const projects = [
     ],
     image: studynotion,
     source_code_link: "https://github.com/vermajay/StudyNotion",
-    live_link: "#"
+    live_link: "https://courseharbor.vercel.app/"
   },
   {
     name: "Expense Tracker",
