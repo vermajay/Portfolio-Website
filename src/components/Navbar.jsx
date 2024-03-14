@@ -67,10 +67,10 @@ const Navbar = () => {
         </ul>
 
         {/* MOBILE NAVBAR */}
-        <div ref={navMenu} className='sm:hidden flex flex-1 justify-end items-center relative'>
+        <div ref={navMenu} className='sm:hidden flex flex-1 justify-end items-center relative z-20'>
 
           {/*Hamburger icon*/}
-          <a id="menu-icon" className={`${toggle ? 'close' : ''} cursor-pointer z-20 absolute`} 
+          <a id="menu-icon" className={`${toggle ? 'close' : ''} cursor-pointer absolute`} 
             onClick={()=>setToggle(!toggle)}>
             <div className="bar"></div>
             <div className="bar"></div>

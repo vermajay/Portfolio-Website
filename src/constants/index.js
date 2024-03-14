@@ -18,6 +18,7 @@ import {
   expressjs,
   _redux,
   mysql,
+  mealmentor,
   instagram,
   studynotion,
   expensetracker,
@@ -167,6 +168,32 @@ const experiences = [
 ];
 
 const projects = [
+  {
+    name: "Meal Mentor",
+    description:
+      "I developed the entire UI/UX of Meal Mentor. It is a GPT-4 powered AI application that helps you to decide what you can eat and gives you meals for the entire week 🍕, Recipes for each meal on ChatBot 🧑🏻‍🍳, Grocery List 🛒, etc.",
+    tags: [
+      {
+        name: "reactjs",
+        color: "#FF2D00", //red
+      },
+      {
+        name: "tailwindcss",
+        color: "#0017FF", //dark blue
+      },
+      {
+        name: "python",
+        color: "#11923C", //dark green
+      },
+      {
+        name: "GPT-4",
+        color: "#FF00F0", //pink
+      },
+    ],
+    image: mealmentor,
+    source_code_link: "https://github.com/kishaaggarwal32/nutrition-ai",
+    live_link: "https://nutrition-ai.vercel.app/"
+  },
   {
     name: "Instagram Clone",
     description:

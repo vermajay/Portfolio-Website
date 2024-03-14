@@ -30,6 +30,7 @@ import _redux from "./tech/redux.svg";
 import coderscave from "./company/coderscave.png";
 import kuk from "./company/kuk.png";
 
+import mealmentor from "./mealmentor.png";
 import instagram from "./instagram.png";
 import studynotion from "./studynotion.png";
 import expensetracker from "./expensetracker.png";
@@ -74,6 +75,7 @@ export {
   firebase,
   expressjs,
   mysql,
+  mealmentor,
   instagram,
   studynotion,
   expensetracker,
