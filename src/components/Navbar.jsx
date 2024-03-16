@@ -67,17 +67,17 @@ const Navbar = () => {
         </ul>
 
         {/* MOBILE NAVBAR */}
-        <div ref={navMenu} className='sm:hidden flex flex-1 justify-end items-center relative z-20'>
+        <div ref={navMenu} className='sm:hidden flex flex-1 justify-end items-center relative'>
 
           {/*Hamburger icon*/}
-          <a id="menu-icon" className={`${toggle ? 'close' : ''} cursor-pointer absolute`} 
+          <a id="menu-icon" className={`${toggle ? 'close' : ''} cursor-pointer z-20 absolute`} 
             onClick={()=>setToggle(!toggle)}>
             <div className="bar"></div>
             <div className="bar"></div>
             <div className="bar"></div>
           </a>
 
-          <div className={`${!toggle ? 'opacity-0' : 'opacity-100'} p-6 absolute -top-9 -right-4 mx-4 my-3 bg-[#b1b1b1] backdrop-blur-md min-w-[140px] z-10 rounded-md transition-all duration-200`}>
+          <div className={`${!toggle ? 'hidden' : 'absolute'} p-6 -top-9 -right-4 mx-4 my-3 bg-[#b1b1b1] backdrop-blur-md min-w-[140px] z-10 rounded-md transition-all duration-200`}>
 
             <ul className='flex flex-col gap-4 pt-6 pr-8 items-start justify-end'>
               {
