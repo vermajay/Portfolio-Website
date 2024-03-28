@@ -8,11 +8,14 @@ import {
   css,
   reactjs,
   tailwind,
+  nextjs,
   nodejs,
   mongodb,
   git,
+  github_tech,
   coderscave,
   kuk,
+  shynotech,
   threejs,
   firebase,
   expressjs,
@@ -61,7 +64,7 @@ const services = [
     icon: web,
   },
   {
-    title: "React Developer",
+    title: "React & Next Developer",
     icon: mobile,
   },
   {
@@ -90,10 +93,15 @@ const technologies = [
     icon: javascript,
     progress: 80,
   },
-    {
+  {
     name: "Tailwind CSS",
     icon: tailwind,
     progress: 95,
+  },
+  {
+    name: "Next JS",
+    icon: nextjs,
+    progress: 40,
   },
   {
     name: "React JS",
@@ -140,15 +148,33 @@ const technologies = [
     icon: git,
     progress: 80,
   },
+  {
+    name: "Github", 
+    icon: github_tech,
+    progress: 80,
+  },
 ];
 
 const experiences = [
   {
+    title: "FullStack Intern",
+    company_name: "Shyno Technology",
+    company_link: "https://shynotech.com/",
+    icon: shynotech,
+    iconBg: "#DEDEDE",
+    date: "Mar 2024 - Present",
+    points: [
+      "Managing multiple client's websites built on PHP and MySQL",
+      "Optimizing sites for SEO while increasing performance and reliability"
+    ],
+  },
+  {
     title: "WebDev Team Lead",
     company_name: "Hail Jarvis, UIET, Kurukshetra University",
+    company_link: "https://www.linkedin.com/in/hjarvisofficial/",
     icon: kuk,
     iconBg: "#DEDEDE",
-    date: "Dec 2023 - Present",
+    date: "Jan 2024 - Present",
     points: [
       "Taking monthly sessions on the newest in the world of website development",
       "Guiding peers and resolving their doubts in this field"
@@ -157,6 +183,7 @@ const experiences = [
   {
     title: "Web Developer Intern",
     company_name: "CodersCave",
+    company_link: "https://www.linkedin.com/company/codersscave/",
     icon: coderscave,
     iconBg: "#DEDEDE",
     date: "Aug 2023 - Sep 2023",

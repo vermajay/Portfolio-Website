@@ -16,10 +16,11 @@ const About = () => {
       <motion.p variants={fadeIn("","",0.2,1)} className='mt-7 text-secondary text-[17px] max-w-3xl leading-[30px]'>
         I&apos;m an engineering student and a skilled software
         developer with experience in JavaScript and
-        C++, and expertise in frameworks like React and Node.js.<br/><br/>
+        C++, and expertise in frameworks and libraries like React and Node.js.<br/><br/>
          I&apos;m a quick learner and collaborate closely with clients to
         create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let&apos;s work together to bring your ideas to life!
+        real-world problems. Let&apos;s work together to bring your ideas to life!<br/><br/>
+        I&apos;m currently learning <b>NextJs</b> through buiding projects🚀
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
