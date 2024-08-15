@@ -16,6 +16,8 @@ import {
   coderscave,
   kuk,
   shynotech,
+  netart,
+  bloomtide,
   threejs,
   firebase,
   expressjs,
@@ -157,12 +159,37 @@ const technologies = [
 
 const experiences = [
   {
-    title: "FullStack Intern",
+    title: "Software Engineer Intern",
+    company_name: " Bloom Tide Consulting",
+    company_link: "https://www.bloomtideconsulting.com/",
+    icon: bloomtide,
+    iconBg: "#35A0E6",
+    date: "Aug 2024 - Present",
+    points: [
+      "Helping clients create their online presence through custom websites using MERN stack",
+      "Building MVPs for the company"
+    ],
+  },
+  {
+    title: "Software Engineer Intern",
+    company_name: "NetArt",
+    company_link: "https://netart.io/",
+    icon: netart,
+    iconBg: "#FAFAFA",
+    date: "Apr 2024 - Jul 2024",
+    points: [
+      "Built website's backends through Strapi CMS, used RESTful, GraphQL apis and Amazon S3 cloud storage for faster data access",
+      "Extended plugins available on Strapi marketplace according to client and project requirement",
+      "Used Plasmic for building dynamic frontend"
+    ],
+  },
+  {
+    title: "Software Engineer Intern",
     company_name: "Shyno Technology",
     company_link: "https://shynotech.com/",
     icon: shynotech,
-    iconBg: "#DEDEDE",
-    date: "Mar 2024 - Present",
+    iconBg: "#FAFAFA",
+    date: "Mar 2024 - Apr 2024",
     points: [
       "Managing multiple client's websites built on PHP and MySQL",
       "Optimizing sites for SEO while increasing performance and reliability"
@@ -173,7 +200,7 @@ const experiences = [
     company_name: "Hail Jarvis, UIET, Kurukshetra University",
     company_link: "https://www.linkedin.com/in/hjarvisofficial/",
     icon: kuk,
-    iconBg: "#DEDEDE",
+    iconBg: "#DADADA",
     date: "Jan 2024 - Present",
     points: [
       "Taking monthly sessions on the newest in the world of website development",
@@ -185,7 +212,7 @@ const experiences = [
     company_name: "CodersCave",
     company_link: "https://www.linkedin.com/company/codersscave/",
     icon: coderscave,
-    iconBg: "#DEDEDE",
+    iconBg: "#FAFAFA",
     date: "Aug 2023 - Sep 2023",
     points: [
       "Made a landing page for a dummy EdTech platform using ReactJS and TailwindCss for frontend and ExpressJS for backend, user data is stored in MongoDB",

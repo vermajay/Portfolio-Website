@@ -12,7 +12,7 @@ const Hero = () => {
             Hello, I&apos;m <span className='blue-gradient_text'>Jay</span>👋
           </h1>
           <p className={`${styles.heroSubText} mt-6 text-secondary`}>
-            Software engineer based in India, specializing in technical education through hands-on learning and building applocations 
+            Software engineer based in India, specializing in technical education through hands-on learning and building applications 
           </p>
         </div>
         <div>

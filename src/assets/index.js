@@ -32,6 +32,8 @@ import _redux from "./tech/redux.svg";
 import coderscave from "./company/coderscave.png";
 import kuk from "./company/kuk.png";
 import shynotech from "./company/shynotech.png";
+import netart from "./company/netart.png";
+import bloomtide from "./company/bloomtide.png";
 
 import mealmentor from "./mealmentor.png";
 import instagram from "./instagram.png";
@@ -78,6 +80,8 @@ export {
   coderscave,
   kuk,
   shynotech,
+  netart,
+  bloomtide,
   firebase,
   expressjs,
   mysql,
