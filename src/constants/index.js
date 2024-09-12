@@ -23,7 +23,7 @@ import {
   expressjs,
   _redux,
   mysql,
-  mealmentor,
+  internshala_automation,
   instagram,
   studynotion,
   expensetracker,
@@ -223,35 +223,31 @@ const experiences = [
 
 const projects = [
   {
-    name: "Meal Mentor",
+    name: "Internshala Automation",
     description:
-      "I developed the entire UI/UX of Meal Mentor. It is a GPT-4 powered AI application that helps you to decide what you can eat and gives you meals for the entire week 🍕, Recipes for each meal on ChatBot 🧑🏻‍🍳, Grocery List 🛒, etc.",
+      "Wrote a JS script that automatically applies to internships on Internshala using Google’s Puppeteer high level API for chrome, it also fills in cover letter and also answers dynamic assessment questions",
     tags: [
       {
-        name: "reactjs",
-        color: "#FF2D00", //red
-      },
-      {
-        name: "tailwindcss",
-        color: "#0017FF", //dark blue
-      },
-      {
-        name: "python",
+        name: "puppeteer",
         color: "#11923C", //dark green
       },
       {
-        name: "GPT-4",
-        color: "#FF00F0", //pink
+        name: "javascript",
+        color: "#11223C", //gray
+      },
+      {
+        name: "node",
+        color: "#7F7579", //grey
       },
     ],
-    image: mealmentor,
-    source_code_link: "https://github.com/kishaaggarwal32/nutrition-ai",
-    live_link: "https://nutrition-ai.vercel.app/"
+    image: internshala_automation,
+    source_code_link: "https://github.com/vermajay/internshala-automation",
+    live_link: "https://github.com/vermajay/internshala-automation"
   },
   {
     name: "Instagram Clone",
     description:
-      "Created an Instagram clone with photo sharing, user profiles, comments, likes, followers, following, profile exploration, and mobile-friendly design.",
+      "Created an Instagram clone with photo sharing, user profiles, comments, likes, followers, following, profile exploration, and mobile-friendly design",
     tags: [
       {
         name: "reactjs",
@@ -311,7 +307,7 @@ const projects = [
   {
     name: "Expense Tracker",
     description:
-      "Explore my intuitive expense tracker—log income, expenses securely, and it comes with secure login and signup. Effortlessly track spending for informed financial decisions.",
+      "Explore my intuitive expense tracker—log income, expenses securely, and it comes with secure login and signup. Effortlessly track spending for informed financial decisions",
     tags: [
       {
         name: "reactjs",
@@ -367,7 +363,7 @@ const projects = [
   {
     name: "Github Spy",
     description:
-      "Input a username, uncover complete GitHub profiles instantly. Explore repositories, contributions, followers, and more in one click—a streamlined way to delve into GitHub users' details.",
+      "Input a username, uncover complete GitHub profiles instantly. Explore repositories, contributions, followers, and more in one click—a streamlined way to delve into GitHub users' details",
     tags: [
       {
         name: "html",
@@ -393,7 +389,7 @@ const projects = [
   {
     name: "Snake & Apples",
     description:
-      "Classic Snake game in pure JavaScript: eat apples, grow longer, avoid collisions. Simple, addictive, and no frameworks used.",
+      "Classic Snake game in pure JavaScript: eat apples, grow longer, avoid collisions. Simple, addictive, and no frameworks used",
     tags: [
       {
         name: "html",
@@ -415,7 +411,7 @@ const projects = [
   {
     name: "Weather App",
     description:
-      "Discover my versatile weather app! Detailed updates on temperature, humidity, wind speed, and clouds—be ready for any location, any time.",
+      "Discover my versatile weather app! Detailed updates on temperature, humidity, wind speed, and clouds—be ready for any location, any time",
     tags: [
       {
         name: "html",
@@ -485,7 +481,7 @@ const projects = [
   {
     name: "Password Generator",
     description:
-      "Generate strong, custom passwords easily! Set length, symbols, and check their strength instantly on my website.",
+      "Generate strong, custom passwords easily! Set length, symbols, and check their strength instantly on my website",
     tags: [
       {
         name: "html",
@@ -507,7 +503,7 @@ const projects = [
   {
     name: "RazorPay Clone",
     description:
-      "Check out my frontend clone of Razorpay's website, crafted with Tailwind CSS for a polished, responsive design.",
+      "Check out my frontend clone of Razorpay's website, crafted with Tailwind CSS for a polished, responsive design",
     tags: [
       {
         name: "vite",

@@ -35,7 +35,7 @@ import shynotech from "./company/shynotech.png";
 import netart from "./company/netart.png";
 import bloomtide from "./company/bloomtide.png";
 
-import mealmentor from "./mealmentor.png";
+import internshala_automation from "./internshala_automation.png";
 import instagram from "./instagram.png";
 import studynotion from "./studynotion.png";
 import expensetracker from "./expensetracker.png";
@@ -85,7 +85,7 @@ export {
   firebase,
   expressjs,
   mysql,
-  mealmentor,
+  internshala_automation,
   instagram,
   studynotion,
   expensetracker,
